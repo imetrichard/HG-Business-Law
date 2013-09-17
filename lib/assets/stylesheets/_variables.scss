@@ -1,0 +1,21 @@
+// Breakpoints
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 768px 8);
+
+// Color Settings
+$red: #DB5353;
+$orange: #DB7F46;
+$blue: #4F9FAB;
+$green: #2ecc71;
+$yellow: #D7DB5C;
+
+// Fonts
+.headline {
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}

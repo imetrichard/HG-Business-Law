@@ -1,0 +1,122 @@
+header, footer {
+  h1 {
+    display: inline-block;
+    color: $pgreen;
+    text-shadow: 1px 1px 1px #464646;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 27px;
+    width: 52%;
+
+    ul {
+      li {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+        width: 100px;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 16px;
+          width: auto;
+          padding: 5px 15px;
+          border-radius: 6px;
+          text-shadow: 1px 1px 1px #464646;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  nav {
+    ul {
+      li {
+
+        a {
+          text-shadow: 1px 1px 1px #464646;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+
+          &:hover {
+            background-color: $pgreen;
+            color: #2d2d2d;
+            text-decoration: none;
+            text-shadow: 0px 0px 0px #464646;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  box-shadow: none;
+  z-index: 99;
+  top: 0;
+  background-color: rgba(45, 45, 45, 0.8);
+}
+
+.footer-container {
+  position: fixed;
+  width: 100%;
+  box-shadow: none;
+  z-index: 99;
+  bottom: 0;
+  background-color: rgba(45, 45, 45, 0.8);
+
+  footer {
+    padding: 0;
+
+    h1 {
+      display: inline-block;
+      float: left;
+      font-size: 21px;
+    }
+
+    i {
+      font-size: 28px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+
+      &:hover {
+        color: $pgreen;
+      }
+    }
+
+    nav {
+      margin-top: 10px;
+      float: right;
+      width: auto;
+
+      ul {
+        li {
+          width: inherit;
+          a {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 3px 10px;
+          }
+        }
+      }
+    }
+    .social {
+      float: left;
+      width: 300px;
+    }
+  }
+
+}

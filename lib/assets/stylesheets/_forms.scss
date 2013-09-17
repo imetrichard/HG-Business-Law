@@ -1,0 +1,37 @@
+fieldset {
+  padding-bottom: 50px;
+
+  label {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+    padding-top: 25px;
+
+    &.email-list {
+      width: auto;
+      padding: 0;
+      vertical-align: middle;
+    }
+  }
+
+  input {
+    background-color: #222;
+    border-bottom: 2px solid $green;
+    display: inline-block;
+    color: $pgreen;
+    font-size: 18px;
+
+    &.email-list-input {
+      border-bottom: 2px solid $pgreen;
+    }
+
+  }
+
+  textarea {
+    width: 360px;
+    height: 120px;
+    margin-top: 30px;
+    background-color: #6bc276;
+    border: 0;
+  }
+}

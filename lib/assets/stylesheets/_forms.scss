@@ -16,13 +16,10 @@ fieldset {
 
   input {
     background-color: #222;
-    border-bottom: 2px solid $green;
     display: inline-block;
-    color: $pgreen;
     font-size: 18px;
 
     &.email-list-input {
-      border-bottom: 2px solid $pgreen;
     }
 
   }

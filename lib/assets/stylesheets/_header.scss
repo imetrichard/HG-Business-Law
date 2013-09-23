@@ -1,7 +1,6 @@
 header, footer {
   h1 {
     display: inline-block;
-    color: $pgreen;
     text-shadow: 1px 1px 1px #464646;
   }
 
@@ -48,7 +47,6 @@ header {
           transition: all 0.2s linear;
 
           &:hover {
-            background-color: $pgreen;
             color: #2d2d2d;
             text-decoration: none;
             text-shadow: 0px 0px 0px #464646;
@@ -93,7 +91,6 @@ header {
       transition: all 0.2s linear;
 
       &:hover {
-        color: $pgreen;
       }
     }
 

@@ -8,6 +8,11 @@
 @import '_modals.scss';
 @import '_terms.scss';
 @import '_forms.scss';
+@import '_home.scss';
 
 // Vendor CSS
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700|Open+Sans:400,600,700);
+
+main {
+  margin-top: 55px;
+}

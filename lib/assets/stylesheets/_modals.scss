@@ -12,7 +12,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-perspective body  {
-  background: #222;
+  background: #fff;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px;
@@ -55,10 +55,12 @@ perspective effects (not including the modals and the overlay).
   left: 0;
   z-index: 1000;
   opacity: 0;
-  background: #222;
+  background: rgba(255, 255, 255, 0.4);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-filter: blur(2px);
+  filter: url(#blur-effect-1);
 }
 
 .md-show ~ .md-overlay {
@@ -68,7 +70,7 @@ perspective effects (not including the modals and the overlay).
 
 /* Content styles */
 .md-content {
-  background: #222;
+  background: #fff;
   position: relative;
   border-radius: 3px;
   margin: 0 auto;

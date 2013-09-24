@@ -1,0 +1,24 @@
+#home {
+  .hero {
+    background: url("http://placehold.it/350x150") no-repeat center center;
+    background-size: cover;
+    height: 500px;
+  }
+  .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo {
+    background-color: #b1b1b1;
+    padding-left: 20%;
+    min-height: 200px;
+    margin-top: 50px;
+
+    .item {
+      width: 300px;
+      display: inline-block;
+    }
+  }
+}

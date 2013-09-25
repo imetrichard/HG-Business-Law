@@ -96,19 +96,17 @@ header {
       -moz-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
-
-      &:hover {
-      }
     }
 
     nav {
       margin-top: 10px;
-      float: right;
       width: auto;
+      list-style: none;
 
       ul {
         li {
           width: inherit;
+
           a {
             font-size: 12px;
             font-weight: normal;
@@ -117,11 +115,17 @@ header {
           }
         }
       }
-    }
-    .social {
-      float: left;
-      width: 300px;
+
+      &.links {
+        float: left;
+          ul {
+            li {
+              &:nth-of-type(2) {
+                width: 90px;
+              }
+            }
+          }
+      }
     }
   }
-
 }

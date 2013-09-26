@@ -19,6 +19,7 @@ header, footer {
           width: auto;
           padding: 5px 15px;
           border-radius: 6px;
+          letter-spacing: 1px;
 
           &:hover {
             text-decoration: none;
@@ -42,23 +43,30 @@ header {
         }
 
         &:last-of-type {
-          width: 160px;
+          width: 210px;
           background-color: #59b975;
           margin-left: 20px;
           border-radius: 5px;
+          position: relative;
+          text-align: center;
+          border: 0;
+          border-bottom: 2px solid darken(#59b975, 30%);
+          -webkit-box-shadow: inset 0 -2px darken(#59b975, 10%);
+          box-shadow: inset 0 -2px darken(#59b975, 10%);
+
+          &:active {
+            top: 1px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
 
           a {
             color: #ffffff;
-            text-shadow: 1px 1px 1px #418c59;
-          }
-
-          &:hover {
-            background-color: white;
-
-            a {
-              color: #4169e1;
-              text-shadow: 1px 1px 1px #c3c3c3;
-            }
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
           }
         }
 

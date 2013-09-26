@@ -1,23 +1,19 @@
 header, footer {
-  h1 {
-    display: inline-block;
-    text-shadow: 1px 1px 1px #464646;
-  }
 
   nav {
     width: auto;
     margin-top: 10px;
-    width: 75%;
 
     ul {
       li {
         display: inline-block;
         float: left;
         margin-right: 5px;
-        width: 100px;
+        width: 85px;
 
         a {
-          font-weight: bold;
+          font-weight: 300;
+          font-family: roboto;
           text-decoration: none;
           font-size: 16px;
           width: auto;
@@ -37,17 +33,41 @@ header {
   nav {
     ul {
       li {
+        text-align: center;
+
+        &:hover {
+          a {
+            color: #fbffc2;
+          }
+        }
+
+        &:last-of-type {
+          width: 160px;
+          background-color: #59b975;
+          margin-left: 20px;
+          border-radius: 5px;
+
+          a {
+            color: #ffffff;
+            text-shadow: 1px 1px 1px #418c59;
+          }
+
+          &:hover {
+            background-color: white;
+
+            a {
+              color: #4169e1;
+              text-shadow: 1px 1px 1px #c3c3c3;
+            }
+          }
+        }
+
 
         a {
           -webkit-transition: all 0.2s linear;
           -moz-transition: all 0.2s linear;
           -o-transition: all 0.2s linear;
           transition: all 0.2s linear;
-
-          &:hover {
-            color: #2d2d2d;
-            text-decoration: none;
-          }
         }
       }
     }
@@ -61,13 +81,9 @@ header {
   z-index: 99;
   top: 0;
   background-color: $blue;
+  border-bottom: solid 2px lighten($blue, 10%);
   color: #eee;
   height: 55px;
-
-  h1 {
-    margin-bottom: 10px;
-    margin-top: 17px;
-  }
 
   .logo {
     width: 250px;
@@ -87,11 +103,12 @@ header {
   z-index: 99;
   bottom: 0;
   background-color: white;
-  border-top: 1px solid #d7efff;
 
   footer {
     padding: 0;
-    color: #5d738c;
+    padding-top: 10px;
+    color: $blue;
+    border-top: solid 1px lighten($blue, 30%);
 
     h1 {
       display: inline-block;
@@ -107,6 +124,11 @@ header {
       transition: all 0.2s linear;
     }
 
+    img.yelp {
+      width: 85px;
+      margin-top: -12px;
+    }
+
     nav {
       margin-top: 10px;
       width: auto;
@@ -115,12 +137,21 @@ header {
       ul {
         li {
           width: inherit;
+          margin-right: 10px;
+
+          &:nth-child(3){
+            margin-right: 0;
+          }
 
           a {
             font-size: 12px;
             font-weight: normal;
             padding: 3px 10px;
             color: #5d738c;
+
+            &:last-of-type {
+              padding-left: 0;
+            }
           }
         }
       }

@@ -46,7 +46,7 @@ div.tsc_pricingtable03 div.column_4 { /* transitions */ -webkit-transition:box-s
 div.tsc_pricingtable03 div.column_1:hover,
 div.tsc_pricingtable03 div.column_2:hover,
 div.tsc_pricingtable03 div.column_3:hover,
-div.tsc_pricingtable03 div.column_4:hover { position:relative; z-index:100; left:-5px; top:-15px; /* shadow */ box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -webkit-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -moz-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5);}
+div.tsc_pricingtable03 div.column_4:hover { position:relative; z-index:98; left:-5px; top:-15px; /* shadow */ box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -webkit-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -moz-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5);}
 div.tsc_pricingtable03 div.column_1:hover li.row_style_1,
 div.tsc_pricingtable03 div.column_2:hover li.row_style_1,
 div.tsc_pricingtable03 div.column_3:hover li.row_style_1,
@@ -74,7 +74,7 @@ div.tsc_pricingtable03 div.column_4:hover li.header_row_2 { padding-left:5px !im
 div.tsc_pricingtable03 div.column_1:hover li.footer_row,
 div.tsc_pricingtable03 div.column_2:hover li.footer_row,
 div.tsc_pricingtable03 div.column_3:hover li.footer_row,
-div.tsc_pricingtable03 div.column_4:hover li.footer_row { padding-left:5px !important; padding-right:5px !important; border-bottom:1px solid #ccc; }
+div.tsc_pricingtable03 div.column_4:hover li.footer_row {   padding:15px !important; border-bottom:1px solid #ccc; width: 90%;}
 div.tsc_pricingtable03 div.column_1 li.footer_row,
 div.tsc_pricingtable03 div.column_2 li.footer_row,
 div.tsc_pricingtable03 div.column_3 li.footer_row,
@@ -96,7 +96,21 @@ div.tsc_pricingtable03 li.row_style_2 { background-color:#f6f6f6; border-bottom:
 div.tsc_pricingtable03 li.row_style_3 { background-color:#ebebeb; border-bottom:1px dotted #ccc;}
 div.tsc_pricingtable03 li.row_style_4 { background-color:#e3e3e3; border-bottom:1px dotted #ccc;}
 
-div.tsc_pricingtable03 li.footer_row { width:100%; height:40px; padding-top:14px !important; padding-bottom:6px !important; float:left; background-color:#e2e2e2; }
+div.tsc_pricingtable03 li.footer_row {
+  width:85%;
+  height:auto;
+  padding-top:14px !important;
+  padding:15px !important;
+  float:left;
+  background-color:#e2e2e2;
+
+  p {
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-size: 12px;
+    min-height: 180px;
+  }
+}
 div.tsc_pricingtable03 a.sign_up { width:66%; height:24px; padding:6px 0px 0px 0px !important; display:block; text-align:center; margin-left:auto; margin-right:auto; text-shadow:0px 1px 0px #ffffff; border:1px solid #b5b5b5; background-color:#d8d8d8; outline:none;  background-image:linear-gradient(top, #ffffff, #efefef 1px, #d8d8d8); /* W3C */  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#d8d8d8'); /* IE5.5 - 7 */ -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#d8d8d8'); background:-ms-linear-gradient(top, #ffffff, #efefef 1px, #d8d8d8); background:-moz-linear-gradient(top, #ffffff, #efefef 1px, #d8d8d8); background:-o-linear-gradient(top, #ffffff, #efefef 1px, #d8d8d8); background:-webkit-linear-gradient(top, #ffffff, #efefef 1px, #d8d8d8);  background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(0.05, #efefef), color-stop(1, #d8d8d8)); box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5); -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5); -moz-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5); font-weight:bold;}
 div.tsc_pricingtable03 a.sign_up:hover { height:24px; padding:6px 0px 0px 0px !important; text-shadow:0px 1px 0px #ffffff; border:1px solid #b5b5b5; background-color:#c9c9c9; outline:none; background-image:linear-gradient(top, #d2d2d2, #dedede 1px, #c9c9c9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#c9c9c9'); /* IE5.5 - 7 */ -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#c9c9c9'); /* IE8 */ background:-ms-linear-gradient(top, #d2d2d2, #dedede 1px, #c9c9c9); background:-moz-linear-gradient(top, #d2d2d2, #dedede 1px, #c9c9c9); background:-o-linear-gradient(top, #d2d2d2, #dedede 1px, #c9c9c9); background:-webkit-linear-gradient(top, #d2d2d2, #dedede 1px, #c9c9c9);  background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #d2d2d2), color-stop(0.05, #dedede), color-stop(1, #c9c9c9)); box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5); -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5); -moz-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);}
 

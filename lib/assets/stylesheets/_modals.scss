@@ -1,34 +1,9 @@
-/* General styles for the modal */
-
-/*
-Styles for the html/body for special modal where we want 3d effects
-Note that we need a container wrapping all content on the page for the
-perspective effects (not including the modals and the overlay).
-*/
-.md-perspective,
-.md-perspective body {
-  height: 100%;
-  overflow: hidden;
-}
-
-.md-perspective body  {
-  background: #fff;
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  perspective: 600px;
-}
-
-.container {
-  background: #e74c3c;
-  min-height: 100%;
-}
-
 .md-modal {
   position: fixed;
   top: 50%;
   left: 50%;
   width: 50%;
-  max-width: 630px;
+  max-width: 700px;
   min-width: 320px;
   height: auto;
   z-index: 2000;
@@ -68,12 +43,69 @@ perspective effects (not including the modals and the overlay).
   visibility: visible;
 }
 
-/* Content styles */
 .md-content {
   background: #fff;
   position: relative;
+  border: solid #eee 1px;
   border-radius: 3px;
   margin: 0 auto;
+  width: 100%;
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 20px 80px 10px 20px;
+    background-color: $blue;
+    color: white;
+    width: 90%;
+    padding-right: 0;
+    display: inline-block;
+  }
+  a {
+    padding: 15px;
+    color: white;
+    background-color: #59b975;
+    font-weight: bold;
+    display: inline-block;
+    left: 0;
+    top: -10px;
+    width: 20px;
+    margin-left: -4px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: #4d4d4d;
+  }
+
+  .left-content {
+    width: 250px;
+    background-color: #bfbfbf;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    height: auto;
+    margin-top: -10px;
+  }
+
+  .right-content {
+    width: 350px;
+    display: inline-block;
+    padding: 20px 0 0 20px;
+
+    button {
+      width: 150px;
+      height: 40px;
+      float: right;
+      font-size: 18px;
+    }
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 11px;
+  }
 }
 
 .md-content h3 {
@@ -111,7 +143,7 @@ perspective effects (not including the modals and the overlay).
 .md-content button {
   margin: 0 auto;
   margin-left: 125px;
-  width: 360px;
+  width: 260px;
   font-weight: 300;
   font-size: 1.25em;
 }
@@ -124,22 +156,22 @@ perspective effects (not including the modals and the overlay).
   text-decoration: none;
 }
 
-.md-effect-11 .md-content {
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
+.md-effect-3 .md-content {
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
   opacity: 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.md-show.md-effect-11 .md-content {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+.md-show.md-effect-3 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 

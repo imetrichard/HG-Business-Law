@@ -1,33 +1,27 @@
 fieldset {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 
   label {
     display: inline-block;
-    width: 120px;
+    width: 75px;
     vertical-align: top;
-    padding-top: 25px;
-
-    &.email-list {
-      width: auto;
-      padding: 0;
-      vertical-align: middle;
-    }
+    font-size: 16px;
+    color: $blue;
   }
 
   input {
     background-color: #eee;
     display: inline-block;
     font-size: 18px;
-
-    &.email-list-input {
-    }
-
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
   }
 
   textarea {
-    width: 360px;
+    width: 260px;
     height: 120px;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #eee;
     border: 0;
   }

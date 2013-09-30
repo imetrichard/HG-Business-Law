@@ -30,7 +30,7 @@
   left: 0;
   z-index: 1000;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.75);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -50,6 +50,7 @@
   border-radius: 3px;
   margin: 0 auto;
   width: 100%;
+  min-height: 470px;
 
   h1 {
     font-size: 32px;
@@ -85,8 +86,13 @@
     display: inline-block;
     padding: 20px;
     vertical-align: top;
-    height: auto;
+    height: 375px;
     margin-top: -10px;
+
+    i {
+      display: inline-block;
+      width: 20px;
+    }
   }
 
   .right-content {

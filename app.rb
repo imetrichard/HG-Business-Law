@@ -3,8 +3,10 @@ require "sinatra"
 require "sinatra/activerecord"
 require './lib/models.rb'
 require './lib/helpers.rb'
+require './lib/enviroments.rb'
 
-set :database, "sqlite3:///articles.db"
+
+#set :database, "sqlite3:///articles.db"
 
 class Post < ActiveRecord::Base
   validates :title, presence: true, length: { minimum: 3 }

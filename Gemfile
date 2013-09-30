@@ -4,7 +4,7 @@ gem "sinatra"
 gem "haml"
 gem "sass"
 gem 'tilt'
-gem "sqlite3"
+#gem "sqlite3"
 gem "activerecord"
 gem "sinatra-activerecord"
 

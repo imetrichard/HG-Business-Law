@@ -1,0 +1,14 @@
+#services {
+  .service {
+    width: 30%;
+    margin-right: 4.5%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    min-height: 750px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

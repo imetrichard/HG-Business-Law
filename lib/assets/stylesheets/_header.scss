@@ -38,21 +38,22 @@ header {
 
         &:hover {
           a {
-            color: #fbffc2;
+            color: $green;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
           }
         }
 
         &:last-of-type {
           width: 210px;
-          background-color: #59b975;
+          background-color: $green;
           margin-left: 20px;
           border-radius: 5px;
           position: relative;
           text-align: center;
           border: 0;
-          border-bottom: 2px solid darken(#59b975, 30%);
-          -webkit-box-shadow: inset 0 -2px darken(#59b975, 10%);
-          box-shadow: inset 0 -2px darken(#59b975, 10%);
+          border-bottom: 2px solid darken($green, 20%);
+          -webkit-box-shadow: inset 0 -2px darken($green, 10%);
+          box-shadow: inset 0 -2px darken($green, 10%);
 
           &:active {
             top: 1px;
@@ -115,8 +116,23 @@ header {
   footer {
     padding: 0;
     padding-top: 10px;
+    padding-bottom: 20px;
     color: $blue;
     border-top: solid 1px lighten($blue, 30%);
+
+    small {
+      display: inline-block;
+      margin-top: 10px;
+      width: 100%;
+      a {
+        color: $blue;
+        padding: 0;
+        display: inline;
+        font-weight: normal;
+        width: auto;
+        margin-left: 10px;
+      }
+    }
 
     h1 {
       display: inline-block;
@@ -133,8 +149,8 @@ header {
     }
 
     img.yelp {
-      width: 85px;
-      margin-top: -12px;
+      width: 27px;
+      margin-top: 0px;
     }
 
     nav {
@@ -156,20 +172,49 @@ header {
             font-weight: normal;
             padding: 3px 10px;
             color: #5d738c;
-
-            &:last-of-type {
-              padding-left: 0;
-            }
           }
         }
       }
 
       &.links {
         float: left;
+        width: 50%;
           ul {
             li {
-              &:nth-of-type(2) {
-                width: 90px;
+              width: 200px;
+              margin-left: 0;
+
+              a {
+                font-size: 16px;
+              }
+
+              &:first-of-type {
+                width: 145px;
+                background-color: $green;
+                margin-left: 0px;
+                border-radius: 5px;
+                position: relative;
+                text-align: center;
+                border: 0;
+                border-bottom: 2px solid darken($green, 20%);
+                -webkit-box-shadow: inset 0 -2px darken($green, 10%);
+                box-shadow: inset 0 -2px darken($green, 10%);
+                padding-left: 10px;
+
+                &:active {
+                  top: 1px;
+                  outline: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                }
+
+                a {
+                  color: #ffffff;
+                  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                }
               }
             }
           }
